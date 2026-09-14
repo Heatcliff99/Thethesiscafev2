@@ -2,376 +2,729 @@
 # Dependencies
 node_modules/
 
-# Environment variables
-.env
-.env.local
-.env.*
-
-# Build outputs
+# Build artifacts
 dist/
 build/
-target/
+*.js.map
+*.css.map
+
+# Environment
+.env
+.env.local
+.env.
 
 # Logs
 *.log
 
-# Compression files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
-# Coverage reports
-coverage/
-htmlcov/
-
-# Python specific
+# Python (if any Python files exist in project)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-env/
 venv/
 .venv/
-.ENV
+.venv.bak/
 pip-log.txt
 pip-delete-this-directory.txt
-.tox/
+
+# Coverage
 .coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.git/
+coverage/
+htmlcov/
+.nyc_output/
+istanbul/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
 .mypy_cache/
 .pytest_cache/
 .hypothesis/
 
-# Node.js specific
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-dist/
-build/
+# Distribution
+*.egg-info/
+*.dist-info/
+.well-known/
+
+# Browsers
+*.un~/
+*~
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
 coverage/
+
+# nyc test coverage
 .nyc_output
-.jscpd/
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Typescript output
+*.tsbuildinfo
+*.tsx.snap
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# CSS
+*.css.map
+
+# React
+*.hot-update.json
+
+# Next.js
 .next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# Vue
+dist/
+.node-version
 .nuxt/
 .vuepress/dist
+.output
+
+# Angular
+/dist/
+/tmp
+/coverage
+
+# Ember
+dist/
+tmp/
+.ember-cli
+.leadbutt/
+
+# Jekyll
+_site/
+
+# Docker
+.dockerenv
+Dockerfile.local
+Dockerfile.dev
+
+# Local development environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Serverless
+.serverless/
+
+# Yarn
+.yarn/
+yarn-error.log
+
+# Pnpm
+node_modules/.pnpm/
+
+# Turbo
+.out/
+
+# Vite
+.vite/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Remix
+.remix/
+
+# Astro
+.astrowatch
+dist/
+
+# RedwoodJS
+/redwood/
+api/dist/
+web/dist/
+
+# Blitz
+.nexus/
+blitz.config.js
+db/
+.derby.lock
+
+# Keystone
+keystone/
+keystone.config.js
+
+# Directus
+directus/
+directus.config.js
+
+# Strapi
+.strapi/
+strapi/
+strapi.config.js
+
+# Payload CMS
+payload/
+payload.config.js
+
+# Prisma
+prisma/migrations/
+
+# Drizzle
+drizzle/
+
+# tRPC
+.trpc/
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Stylelint
+.stylelintcache
+
+# Webpack
+webpack.config.js
+webpack.mix.js
+
+# Parcel
+.cache/
+.parcel-cache
+
+# Rollup
+.rollup.cache
+
+# Snowpack
+snowpack/
+web_modules/
+
+# Svelte
 .svelte-kit/
 
-# Java specific
-*.class
-*.jar
-*.war
-*.ear
-hs_err_pid*
-replay_pid*
+# SvelteKit
+.svelte-kit/
+.output/
 
-# C/C++ specific
-*.o
-*.a
-*.so
-*.dll
-*.exe
-*.out
-*.obj
+# Astro
+.astrowatch
 
-# Go specific
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.prof
-vendor/
+# Vite
+.svelte-kit/
+.output/
 
-# Ruby specific
-*.gem
-*.rbc
-extconf.rb
-Gemfile.lock
-vendor/
+# Vitest
+coverage/
+.vitest/
 
-# Rust specific
-target/
-Cargo.lock
+# Playwright
+playwright-report/
 
-# PHP specific
-vendor/
-composer.lock
+# Cypress
+cypress/screenshots/
+cypress/videos/
 
-# C# specific
-*.sln
-*.csproj.user
+# Jest
+.jest/
+jest/
+jest.config.js
+jest.setup.js
+
+# Mocha
+.mocharc.json
+
+# Chai
+.chai/
+
+# Ava
+.ava/
+
+# Jasmine
+.jasmine/
+
+# Karma
+.karma/
+
+# Protractor
+.protractor/
+
+# TestCafe
+.testcaferc.json
+
+# Nightwatch
+nightwatch.conf.js
+
+# Puppeteer
+.puppeteer/
+
+# Selenium
+.selenium/
+
+# Cucumber
+.cucumber/
+
+# WebdriverIO
+.webdriverio/
+
+# CodeceptJS
+.codeceptjs/
+
+# Detox
+.detox/
+.detox.instruments/
+.detox.recording/
+
+# Appium
+.appium/
+
+# Espresso
+.espresso/
+
+# XCTest
+.xctest/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Unity
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+*.unityproj
 *.userprefs
-*.pidb
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-*_i.c
-*_p.c
-*.ncb
-*.suo
-*.tlb
-*.tlh
-*.bak
-*.cache
-*.ilk
-*.log
-*.lib
-*.sbr
-*.xml
-*.VC.db
-*.VC.VC.opendb
-[Bb]in
-[Oo]bj
+*.pidb.meta
+*.prefab.meta
+*.mat.meta
+*.anim.meta
+*.controller.meta
+*.unity.meta
+*.asset.meta
+*.meta
+*.asset
+*.cubemap.meta
+*.flare.meta
+*.mat.meta
+*.prefab.meta
+*.unity.meta
+*.anim.meta
+*.controller.meta
+*.physicsMaterial.meta
+*.renderTexture.meta
+*.shader.meta
+*.mp3.meta
+*.wav.meta
+*.ogg.meta
+*.ttf.meta
+*.csv.meta
+*.jpg.meta
+*.jpeg.meta
+*.gif.meta
+*.png.meta
+*.psd.meta
+*.tga.meta
+*.tif.meta
+*.tiff.meta
+*.exr.meta
+*.hdr.meta
+*.fbx.meta
+*.dae.meta
+*.3ds.meta
+*.blend.meta
+*.mb.meta
+*.ma.meta
+*.max.meta
+*.obj.meta
+*.skp.meta
+*.wrl.meta
+*.x3d.meta
+*.x3db.meta
+*.stl.meta
+*.ply.meta
+*.abc.meta
+*.ase.meta
+*.bvh.meta
+*.crn.meta
+*.dds.meta
+*.dxf.meta
+*.gltf.meta
+*.glb.meta
+*.lws.meta
+*.lxo.meta
+*.mdl.meta
+*.mtl.meta
+*.obj.meta
+*.off.meta
+*.ply.meta
+*.pmx.meta
+*.pmd.meta
+*.smd.meta
+*.vrm.meta
+*.vvd.meta
+*.dx9.meta
+*.dx11.meta
+*.glsl.meta
+*.hlsl.meta
+*.cginc.meta
+*.compute.meta
+*.shadersubgraph.meta
+*.spriteatlas.meta
+*.terrain.meta
+*.guiskin.meta
+*.unity3d.meta
+*.assetbundle.meta
+*.prefab
+*.mat
+*.anim
+*.controller
+*.physicsMaterial
+*.renderTexture
+*.shader
+*.mp3
+*.wav
+*.ogg
+*.ttf
+*.csv
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.psd
+*.tga
+*.tif
+*.tiff
+*.exr
+*.hdr
+*.fbx
+*.dae
+*.3ds
+*.blend
+*.mb
+*.ma
+*.max
+*.obj
+*.skp
+*.wrl
+*.x3d
+*.x3db
+*.stl
+*.ply
+*.abc
+*.ase
+*.bvh
+*.crn
+*.dds
+*.dxf
+*.gltf
+*.glb
+*.lws
+*.lxo
+*.mdl
+*.mtl
+*.obj
+*.off
+*.ply
+*.pmx
+*.pmd
+*.smd
+*.vrm
+*.vvd
+*.dx9
+*.dx11
+*.glsl
+*.hlsl
+*.cginc
+*.compute
+*.shadersubgraph
+*.spriteatlas
+*.terrain
+*.guiskin
+*.unity3d
+*.assetbundle
+*.unityproj
+*.userprefs
 
-# Visual Studio Code
-.vscode/
+# Godot
+.godot/
+*.import
+*.remap
+export_presets.cfg
+.rid
 
-# JetBrains IDEs
-.idea/
+# Unreal Engine
+[Build/]
+Saved/
+Binaries/
+Intermediate/
+*. uproject
+*. uproject.user
+*. uprojectdirs
+*. uasset
+*. umap
+*. upkg
+*. ulevel
+*. uexp
+*. ubulk
+*. uasset.meta
+*. umap.meta
+*. upkg.meta
+*. ulevel.meta
+*. uexp.meta
+*. ubulk.meta
+*. uasset.meta
+*. umap.meta
+*. upkg.meta
+*. ulevel.meta
+*. uexp.meta
+*. ubulk.meta
+*.uproject
+*.uproject.user
+*.uprojectdirs
+*.uasset
+*.umap
+*.upkg
+*.ulevel
+*.uexp
+*.ubulk
+*.uasset.meta
+*.umap.meta
+*.upkg.meta
+*.ulevel.meta
+*.uexp.meta
+*.ubulk.meta
 
-# Vim
-*.swp
-*.swo
-*~
+# CryEngine
+.codegen/
+.codegen.meta
+.project
+.project.user
+.userprefs
+.userprefs.meta
+.user
+.user.meta
+.userprefs.backup
+.userprefs.backup.meta
+.user.backup
+.user.backup.meta
+.userprefs.backup2
+.userprefs.backup2.meta
+.user.backup2
+.user.backup2.meta
+.userprefs.backup3
+.userprefs.backup3.meta
+.user.backup3
+.user.backup3.meta
+.userprefs.backup4
+.userprefs.backup4.meta
+.user.backup4
+.user.backup4.meta
+.userprefs.backup5
+.userprefs.backup5.meta
+.user.backup5
+.user.backup5.meta
+.userprefs.backup6
+.userprefs.backup6.meta
+.user.backup6
+.user.backup6.meta
+.userprefs.backup7
+.userprefs.backup7.meta
+.user.backup7
+.user.backup7.meta
+.userprefs.backup8
+.userprefs.backup8.meta
+.user.backup8
+.user.backup8.meta
+.userprefs.backup9
+.userprefs.backup9.meta
+.user.backup9
+.user.backup9.meta
+.userprefs.backup10
+.userprefs.backup10.meta
+.user.backup10
+.user.backup10.meta
 
-# Emacs
-*~
-\#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
-.\#*
+# Android
+*.apk
+*.aar
+*.dex
+app/build/
+.gradle/
+local.properties
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-desktop.ini
-
-# Temporary files
-*.tmp
-*.temp
-*.bak
-*.backup
-
-# Testing
-*.har
-.hound.yml
-.rubocop.yml
-.rubocop_todo.yml
-.ruby-version
-.ruby-gemset
-.bundle/
-.bundler/
-.coveralls.yml
-.codeclimate.yml
-.codeship
-.codeship/
-.codeship_steps
-.codeship_services
-.coverage
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage.*
-.coverage......
+# iOS
+*.ipa
+*.app
+*.xcworkspace
+*.xcodeproj/
+*.xcassets/
+*.lproj/
+*.plist
+*.strings
+*.storyboard
+*.xib
+*.xcdatamodel
+*.xcmappingmodel
+*.cd
+*.mobileprovision
+*.entitlements
+*.xcconfig
+*.xcscheme
+*.xcschemes
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspacedata
+*.xcsettings
+*.xcdebuginfo
+*.xcarchive
+*.xctest
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+*.xctestrun
+*.xctestplan
+*.xctestconfiguration
+*.xctestbundle
+......
 ```
