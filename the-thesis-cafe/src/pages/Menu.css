@@ -1,0 +1,128 @@
+.menu-page {
+  padding-top: 80px;
+}
+
+.menu-hero {
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  padding: 120px 0 80px;
+  text-align: center;
+  color: var(--white);
+}
+
+.menu-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.menu-hero p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.menu-section {
+  background: var(--white);
+}
+
+.menu-category {
+  margin-bottom: 60px;
+}
+
+.menu-category:last-child {
+  margin-bottom: 0;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--gold);
+}
+
+.category-header svg {
+  color: var(--primary-green);
+}
+
+.category-header h2 {
+  font-size: 2rem;
+  color: var(--primary-green);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: var(--cream);
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-item-header h3 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  font-family: 'Playfair Display', serif;
+}
+
+.menu-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-green);
+  background: rgba(74, 124, 35, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.menu-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.menu-note {
+  background: linear-gradient(135deg, var(--light-green), var(--secondary-green));
+}
+
+.note-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.note-card p {
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .menu-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-header h2 {
+    font-size: 1.5rem;
+  }
+}
