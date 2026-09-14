@@ -1,0 +1,120 @@
+/* Color Variables - Green & Radiant Blue Theme */
+:root {
+  /* Primary Colors */
+  --primary-green: #2d5016;
+  --dark-green: #1a3009;
+  --light-green: #4a7c23;
+  
+  /* New Radiant Blue Accents */
+  --radiant-blue: #00B4D8;
+  --light-radiant-blue: #48CAE4;
+  --deep-blue: #0077B6;
+  
+  /* Neutrals */
+  --cream: #FDFCF5;
+  --gold: #D4AF37;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+  --white: #ffffff;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-green) 0%, var(--deep-blue) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--light-green) 0%, var(--radiant-blue) 100%);
+  --gradient-text: linear-gradient(to right, var(--primary-green), var(--radiant-blue));
+  
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.15);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background: var(--gradient-primary);
+  color: var(--white);
+  padding: 50px 0 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: var(--light-radiant-blue);
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.footer-info p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: var(--white);
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--radiant-blue);
+  border-color: var(--radiant-blue);
+  color: var(--white);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
